@@ -11,7 +11,8 @@
 		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.3d96edcf.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/app.44834ca3.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/0.5e9ccdd5.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/3.df8ca80b.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.5b6bf9d1.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/4.876f4099.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -19,7 +20,7 @@
 
 <div class="navbar bg-base-100"><div class="flex-none"><button class="btn btn-square btn-ghost"><label for="my-drawer" class="drawer-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></label></button></div>
   <div class="flex-1"><a class="btn btn-ghost normal-case text-xl">Reactive Programming</a></div></div>
-Welcome!
+<h2>Introduction to Reactive Programming</h2>
 <div class="drawer"><input id="my-drawer" type="checkbox" class="drawer-toggle">
   <div class="drawer-content"></div>
   <div class="drawer-side"><label for="my-drawer" class="drawer-overlay"></label>
@@ -41,14 +42,14 @@ Welcome!
 
 					const element = document.currentScript.parentElement;
 
-					const data = [null,null];
+					const data = [null,null,null];
 
 					Promise.all([
 						import("./_app/immutable/entry/start.90afeedd.js"),
 						import("./_app/immutable/entry/app.44834ca3.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 3],
+							node_ids: [0, 2, 4],
 							data,
 							form: null,
 							error: null
